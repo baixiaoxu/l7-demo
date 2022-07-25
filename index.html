@@ -40,7 +40,7 @@
                 lineUp,
                 textLayer;
 
-            fetch('https://geo.datav.aliyun.com/areas_v3/bound/150400_full.json')
+            fetch('./geo.json')
                 .then(res => res.json())
                 .then(data => {
                     const texts = [];
@@ -104,7 +104,7 @@
                     return '';
                 });
 
-            fetch('https://geo.datav.aliyun.com/areas_v3/bound/150400_full.json')
+            fetch('./geo.json')
                 .then(res => res.json())
                 .then(data => {
                     const lineLayer = new LineLayer()
